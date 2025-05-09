@@ -1,11 +1,11 @@
 import { IsNotEmpty, IsUUID, IsString } from 'class-validator';
 
 export class VerifyOtpDto {
-    @IsUUID()
-    @IsNotEmpty()
-    otpId: string;
+  @IsUUID()
+  @IsNotEmpty()
+  otpId: string;
 
-    @IsString()
-    @IsNotEmpty()
-    otp: string;
+  @IsString()
+  @IsNotEmpty()
+  otp: string;
 }

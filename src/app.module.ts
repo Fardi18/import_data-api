@@ -12,7 +12,7 @@ import { ConfigModule } from '@nestjs/config';
       envFilePath: '.env', // Specify the path to your .env file
     }),
     UserModule,
-    AuthModule
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
