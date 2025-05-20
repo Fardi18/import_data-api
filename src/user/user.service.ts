@@ -34,7 +34,7 @@ export class UserService {
 
     if (ext === '.csv') {
       return this.importCSV(file.path, newBatch.id);
-    } else if (ext === '.xlsx') {
+    } else if (ext === '.xlsx' || ext === '.xls') {
       return this.importXLSX(file.path, newBatch.id);
     } else {
       throw new Error('Unsupported file type');
